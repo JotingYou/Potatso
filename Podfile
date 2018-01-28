@@ -30,7 +30,7 @@ end
 
 target "Potatso" do
     pod 'Aspects', :path => "./Library/Aspects/"
-    pod 'Cartography'
+    pod 'Cartography','~> 1.1.0'
     pod 'AsyncSwift'
     pod 'SwiftColor'
     pod 'Appirater'
@@ -64,7 +64,7 @@ target "PacketProcessor" do
 end
 
 target "TodayWidget" do
-    pod 'Cartography'
+    pod 'Cartography','~> 1.1.0'
     pod 'SwiftColor'
     library
     socket
