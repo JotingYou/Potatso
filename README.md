@@ -5,10 +5,12 @@
 
 # Potatso 
 
-## Important
+## Important   
 
 Please read [this](https://github.com/haxpor/Potatso/blob/master/ADHERE_LICENSE.md) first before you do anything with this project.  
-In short, you need to respect to license of the project. You cannot copy the source code and publish to App Store.
+In short, you need to respect to license of the project. You cannot copy the source code and publish to App Store.   
+本项目仅供学习交流使用。使用前请先阅读[证书](https://github.com/haxpor/Potatso/blob/master/ADHERE_LICENSE.md)。   
+为了尊重原作者[@icodesign](https://github.com/Potatso/Potatso)的劳动成果，让GitHub更好地发展，请遵守项目证书，不要擅自将本项目的源代码打包并发布到 **App Store**，或将项目用于任何其他商业用途。   
 
 ---
 
@@ -39,7 +41,6 @@ The project is tested with Xcode `9.2 (9C40B)` on iOS `11.2 (15B92)` device with
 If you experienced an expected issue, try to use those versions, if still experience the problem please file the issue.
 
 ## How to Use Project
-## 使用说明
 Ps:Following steps were partly from [@ifusernameif](https://github.com/ifusernameif/test).
 
 Perform the following steps to be able to config and build the project.  
@@ -54,39 +55,41 @@ Be warned that you **should not** call `pod update` as newer version of pod fram
    If error occurs while executing `git submodule update --init`,you should download [shadowsocks-libev](https://github.com/shadowsocks/shadowsocks-libev) by yourself(or get old version in `shadowsocks-libev` folder),and copy that to `Potatso/Library/ShadowPath/ShadowPath/shadowsocks-libev `.    
    如果在执行 `git submodule update --init` 时发生错误，需要手动下载 [shadowsocks-libev](https://github.com/shadowsocks/shadowsocks-libev) （或者在 `shadowsocks-libev` 文件夹下获取旧版本），复制到 `Potatso/Library/ShadowPath/ShadowPath/shadowsocks-libev `. 
    
-   Then using `cd` to enter the folder in  Terminal ,and executing   
-   `./configure --with-openssl="{user path}/ShadowPath/ShadowPath/libopenssl"` to build it.    
+   Then use `cd` to enter the folder in  Terminal ,and execute   
+   `./configure --with-openssl="{user path}/ShadowPath/ShadowPath/libopenssl"` to build it.   
    然后在终端中使用 `cd` 命令进入该文件夹，并执行`./configure --with-openssl="{user path}/ShadowPath/ShadowPath/libopenssl"`编译相关文件。
    
 2. `pod install` to pull down dependencies into our project.Don't using `pod update`!!!  
    使用 `pod install` 更新依赖。不要使用`pod update`命令！！
    
-3. `carthage update` to pull down dependencies into `Carthage/Checkouts` folder and using       
+3. Open Xcode,select **Preference -> Locations -> Line Tools**   
+   Set `Xcode 9.2(your Xcode version)`
+4. `carthage update` to pull down dependencies into `Carthage/Checkouts` folder and using       
    `xcodebuild -list -project Carthage/Checkouts/YAML.framework/YAML.xcodeproj`     
    to build YAML.   
    使用 `carthage update` 更新依赖到 `Carthage/Checkouts` 文件夹并执行    
    `xcodebuild -list -project Carthage/Checkouts/YAML.framework/YAML.xcodeproj`    
    编译 YAML。
    
-4. Open `Potatso.xcworkspace`.
+5. Open `Potatso.xcworkspace`.
 
-5. Select **Targets -> General -> Identity -> Team**   
+6. Select **Targets -> General -> Identity -> Team**   
   Change the team to your own team.
   
-6. Select **Targets -> General -> Bundle Identifier**   
+7. Select **Targets -> General -> Bundle Identifier**   
    `Potatso: com.(your organization name).potatso`      
    `PacketTunnel: com.(your organization name).potatso.PacketTunnel`   
    `TodayWidget: com.(your organization name).potatso.TodayWidget`
     
-7. Select **Targets -> Capabilites**   
+8. Select **Targets -> Capabilites**   
   Turn off `Push Notification` and `Background Modes`.   
   Change the **App Group** to `your own group` in each target(**Potatso**, **PacketTunnel**, **TodayWidget**).
   
-8. Edit method `sharedGroupIdentifier` in `PotatsoBase/Potatso.m`  
+9. Edit method `sharedGroupIdentifier` in `PotatsoBase/Potatso.m`  
 
    `return @"(your own group name)";`
    
-9. then Build and Run the project. Done.
+10. Build and Run the project. Done.
 
 ## Code Notices (outdated, will review this part again)
 
