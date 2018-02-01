@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0560B5DE201EDFA3003177E1 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0560B5DD201EDFA3003177E1 /* CloudKit.framework */; };
 		10305058CF9183AA66172BEC /* Pods_Potatso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C82CD7437FBA5F74EB08670 /* Pods_Potatso.framework */; };
 		12AD9C79E2C246F3D21B814E /* Pods_PotatsoLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5494FBA89E140F817CCF2ACA /* Pods_PotatsoLibrary.framework */; };
 		1EB5EF2F1E031488000C7748 /* YAML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B88559EA1D21319D00B1243E /* YAML.framework */; };
-		1ED66DEE1E05A72300638808 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ED66DED1E05A72300638808 /* StoreKit.framework */; };
 		1EE85E0C2000639700C5DB6C /* InfoInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE85E0B2000639700C5DB6C /* InfoInternal.swift */; };
 		1EEBB8771FFFD4B500EB33C3 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EEBB8761FFFD4B500EB33C3 /* NetworkExtension.framework */; };
 		1EEBB8781FFFD52700EB33C3 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EEBB8761FFFD4B500EB33C3 /* NetworkExtension.framework */; };
@@ -186,8 +186,6 @@
 		B88096B01D0579F5008BEB87 /* CloudDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88096AF1D0579F5008BEB87 /* CloudDetailViewController.swift */; };
 		B88096B21D0652F0008BEB87 /* RuleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88096B11D0652F0008BEB87 /* RuleCell.swift */; };
 		B8822CCD1D2AA70A00AD252C /* Receipt.m in Sources */ = {isa = PBXBuildFile; fileRef = B8822CCC1D2AA70A00AD252C /* Receipt.m */; };
-		B8822CD31D2B81C400AD252C /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8822CD11D2B81C400AD252C /* libcrypto.a */; };
-		B8822CD41D2B81C400AD252C /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8822CD21D2B81C400AD252C /* libssl.a */; };
 		B88559EB1D21319D00B1243E /* YAML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B88559EA1D21319D00B1243E /* YAML.framework */; };
 		B88559EC1D21319D00B1243E /* YAML.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B88559EA1D21319D00B1243E /* YAML.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B88559F01D21371A00B1243E /* PotatsoModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC6FFEA1CB28B4B00E5EA61 /* PotatsoModel.framework */; };
@@ -337,11 +335,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0560B5DD201EDFA3003177E1 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		16E45A00C4849FC6D582F28E /* Pods-PotatsoLibraryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PotatsoLibraryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PotatsoLibraryTests/Pods-PotatsoLibraryTests.release.xcconfig"; sourceTree = "<group>"; };
 		1ECA215E1E05E8C700B32187 /* Potatso.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Potatso.entitlements; sourceTree = "<group>"; };
 		1ECA21631E05EA6D00B32187 /* PacketTunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PacketTunnel.entitlements; sourceTree = "<group>"; };
 		1ECA21641E05EADD00B32187 /* TodayWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TodayWidget.entitlements; sourceTree = "<group>"; };
-		1ED66DED1E05A72300638808 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		1EE85E0B2000639700C5DB6C /* InfoInternal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoInternal.swift; sourceTree = "<group>"; };
 		1EEBB8761FFFD4B500EB33C3 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		1EF602941F113A660005E0C7 /* GeoLite2-Country.mmdb */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GeoLite2-Country.mmdb"; sourceTree = "<group>"; };
@@ -890,8 +888,6 @@
 		B88096B11D0652F0008BEB87 /* RuleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuleCell.swift; sourceTree = "<group>"; };
 		B8822CCB1D2AA70A00AD252C /* Receipt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Receipt.h; sourceTree = "<group>"; };
 		B8822CCC1D2AA70A00AD252C /* Receipt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Receipt.m; sourceTree = "<group>"; };
-		B8822CD11D2B81C400AD252C /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "Library/ShadowPath/ShadowPath/shadowsocks-libev/libopenssl/lib/libcrypto.a"; sourceTree = "<group>"; };
-		B8822CD21D2B81C400AD252C /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "Library/ShadowPath/ShadowPath/shadowsocks-libev/libopenssl/lib/libssl.a"; sourceTree = "<group>"; };
 		B88559EA1D21319D00B1243E /* YAML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YAML.framework; path = Carthage/Build/iOS/YAML.framework; sourceTree = "<group>"; };
 		B896A83F1D548AAC009E4BF5 /* ICloudSetupOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICloudSetupOperation.swift; sourceTree = "<group>"; };
 		B8A09D681D51B42B00A9A989 /* CloudKitRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKitRecord.swift; sourceTree = "<group>"; };
@@ -949,9 +945,7 @@
 				9B9B15C41C21595B000B6541 /* PotatsoLibrary.framework in Frameworks */,
 				9BC6FFF11CB28B4B00E5EA61 /* PotatsoModel.framework in Frameworks */,
 				B88559EB1D21319D00B1243E /* YAML.framework in Frameworks */,
-				B8822CD31D2B81C400AD252C /* libcrypto.a in Frameworks */,
-				B8822CD41D2B81C400AD252C /* libssl.a in Frameworks */,
-				1ED66DEE1E05A72300638808 /* StoreKit.framework in Frameworks */,
+				0560B5DE201EDFA3003177E1 /* CloudKit.framework in Frameworks */,
 				10305058CF9183AA66172BEC /* Pods_Potatso.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2061,10 +2055,8 @@
 		C8B2149E8757C44C469576D2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0560B5DD201EDFA3003177E1 /* CloudKit.framework */,
 				1EEBB8761FFFD4B500EB33C3 /* NetworkExtension.framework */,
-				1ED66DED1E05A72300638808 /* StoreKit.framework */,
-				B8822CD11D2B81C400AD252C /* libcrypto.a */,
-				B8822CD21D2B81C400AD252C /* libssl.a */,
 				B88559EA1D21319D00B1243E /* YAML.framework */,
 				9B87060C1C1DBDD400651424 /* libresolv.tbd */,
 				9B8193B31CBCFEE700BE320D /* NotificationCenter.framework */,
@@ -2344,7 +2336,7 @@
 								enabled = 0;
 							};
 							com.apple.InAppPurchase = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.Keychain = {
 								enabled = 0;
@@ -2353,10 +2345,10 @@
 								enabled = 0;
 							};
 							com.apple.VPNLite = {
-								enabled = 0;
+								enabled = 1;
 							};
 							com.apple.iCloud = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -3558,11 +3550,12 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(PODS_ROOT)/Helpshift/helpshift-sdk-ios-v5.6.1",
 					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/ShadowPath/ShadowPath/libopenssl/lib",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/ShadowPath/ShadowPath/libopenssl/lib",
 				);
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DDEBUG";
 				PODS_ROOT = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mingsing.potatso;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JotingYou.potatso;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3608,10 +3601,11 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(PODS_ROOT)/Helpshift/helpshift-sdk-ios-v5.6.1",
 					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/ShadowPath/ShadowPath/libopenssl/lib",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/ShadowPath/ShadowPath/libopenssl/lib",
 				);
 				OTHER_LDFLAGS = "$(inherited)";
 				PODS_ROOT = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mingsing.potatso;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JotingYou.potatso;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3667,7 +3661,7 @@
 				INFOPLIST_FILE = TodayWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mingsing.potatso.todaywidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JotingYou.potatso.todaywidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3694,7 +3688,7 @@
 				INFOPLIST_FILE = TodayWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mingsing.potatso.todaywidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JotingYou.potatso.todaywidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3741,7 +3735,7 @@
 					"$(PROJECT_DIR)/PacketTunnel/Shadowsocks/libsodium-ios/lib",
 					"$(PROJECT_DIR)/PacketTunnel/Antinat/expat-lib/lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mingsing.potatso.tunnel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JotingYou.potatso.tunnel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3786,7 +3780,7 @@
 					"$(PROJECT_DIR)/PacketTunnel/Shadowsocks/libsodium-ios/lib",
 					"$(PROJECT_DIR)/PacketTunnel/Antinat/expat-lib/lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mingsing.potatso.tunnel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JotingYou.potatso.tunnel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

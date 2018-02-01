@@ -283,7 +283,7 @@ extension Manager {
         let confURL = Potatso.sharedProxyConfUrl()
         var content = ""
         if let upstreamProxy = upstreamProxy, upstreamProxy.type == .Shadowsocks || upstreamProxy.type == .ShadowsocksR {
-            var arr = ["host": upstreamProxy.host, "port": upstreamProxy.port, "password": upstreamProxy.password ?? "", "authscheme": upstreamProxy.authscheme ?? "", "ota": upstreamProxy.ota, "protocol": upstreamProxy.ssrProtocol ?? "", "obfs": upstreamProxy.ssrObfs ?? "", "obfs_param": upstreamProxy.ssrObfsParam ?? ""] as [String : Any]
+            let arr = ["host": upstreamProxy.host, "port": upstreamProxy.port, "password": upstreamProxy.password ?? "", "authscheme": upstreamProxy.authscheme ?? "", "ota": upstreamProxy.ota, "protocol": upstreamProxy.ssrProtocol ?? "", "obfs": upstreamProxy.ssrObfs ?? "", "obfs_param": upstreamProxy.ssrObfsParam ?? ""] as [String : Any]
             
             do {
                 //let data = try JSONSerialization.data(withJSONObject: arr, options: .prettyPrinted)
